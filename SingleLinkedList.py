@@ -7,12 +7,6 @@ class SingleLinkedList:
     def __init__(self, header:Node):
         self.header = header
         self.currentNode = header
-    
-    def getNextNode(self):
-        if self.currentNode.next != None:
-            self.currentNode = self.currentNode.next
-            return self.currentNode
-        print("No next Node found")
 
     def getCurrentData(self):
         return self.currentNode.data
@@ -67,8 +61,6 @@ class SingleLinkedList:
                 currentNode = currentNode.next
         else:
             print("Data not in List")
-
-
 
     def isInLL(self, data):
         currentNode = self.header
